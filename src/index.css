@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.product{
+    padding: 20px;
+}
+
+
+.product:hover {
+    box-shadow: rgba(44, 43, 43, 0.3);
+    border: solid 1px green;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.product .btn{
+
+    transition:  transform 1s , opacity 1s ;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.product:hover .btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.row
+{
+    @apply flex flex-wrap py-8 items-center px-4;
+}
+
+.cart{
+  
+    padding: 20px;
+    text-align: center;
+   
+
+}
+
+.cart:hover{
+
+    box-shadow: rgba(44, 43, 43, 0.3);
+    border: solid 1px green;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
